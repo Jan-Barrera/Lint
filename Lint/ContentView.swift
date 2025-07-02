@@ -1,19 +1,34 @@
-//
-//  ContentView.swift
-//  Lint
-//
-//  Created by emmanueljan.barrera on 7/2/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var inputText: String = ""
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading) {
+            TextEditor(text: $inputText)
+              .frame(height:300, alignment: .center)
+              .lineSpacing(10)
+              .padding()
+                                 
+            
+            HStack(spacing: 20) {
+                Button("Format") {
+                    inputText = ""
+                }
+                .buttonStyle(.bordered)
+
+                Button("Clear") {
+                    inputText = ""
+                }
+                .buttonStyle(.bordered)
+
+                Button("Compress") {
+                    inputText = ""
+                }
+                .buttonStyle(.bordered)
+            }
+            
+            Spacer()
         }
         .padding()
     }
