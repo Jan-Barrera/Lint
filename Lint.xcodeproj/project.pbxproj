@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5CBFECD62E1762D800A95B7F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5CBFECD52E1762D800A95B7F /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5CC478602E14CF2B00831C8C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CBFECD62E1762D800A95B7F /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Lint;
 			packageProductDependencies = (
+				5CBFECD52E1762D800A95B7F /* SwiftyJSON */,
 			);
 			productName = Lint;
 			productReference = 5CC4784E2E14CF2400831C8C /* Lint.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 5CC478452E14CF2400831C8C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5CBFECD42E1762D800A95B7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5CC4784F2E14CF2400831C8C /* Products */;
 			projectDirPath = "";
@@ -541,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CBFECD42E1762D800A95B7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CBFECD52E1762D800A95B7F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CBFECD42E1762D800A95B7F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CC478462E14CF2400831C8C /* Project object */;
 }
